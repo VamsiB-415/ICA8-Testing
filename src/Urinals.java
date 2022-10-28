@@ -1,7 +1,4 @@
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 /**
@@ -31,7 +28,9 @@ public class Urinals {
         }
         else if(choice == 2)
         {
-
+            boolean temp = urinals.openFile("src/Urinal.dat");
+            if(temp==false)
+                System.out.println("Failed");
         }
         else
         {
@@ -67,7 +66,7 @@ public class Urinals {
         {
             if(input_str[i]=='0')
             {
-                if(i>0 && i<str.length())
+                if(i>0 && i<str.length()-1)
                 {
                     if(input_str[i-1]=='0' && input_str[i+1]=='0')
                     {
@@ -99,5 +98,64 @@ public class Urinals {
         return count;
     }
 
+    public Boolean openFile(String filepath) {
+        try{
+            Urinals urinals=new Urinals();
+            //Read from input file
+            File file1=new File(filepath);
+            if(file1==null)
+                throw new IOException();
+            File file2=new File("src/counter.txt");
+            if(file2==null)
+                throw new IOException();
+            Scanner c=new Scanner(file2);
+            int counter=Integer.parseInt(c.nextLine());
+            String file3="src/rule.txt";
+            if(counter!=0)
+                file3="src/rule"+counter+".txt";
+            Scanner scanner=new Scanner(file1);
+            while(scanner.hasNextLine()){
+                String s=scanner.nextLine();
+                if(s.equals("-1"))
+                    break;
+                int vacancies=urinals.countUrinals(s);
+                Boolean v=urinals.writeToFile(file3,vacancies);
 
+            }
+            //increment the counter for next output file
+            FileWriter filewriter=new FileWriter("src/counter.txt");
+            if(filewriter==null)
+                throw new IOException();
+            filewriter.write(Integer.toString(counter+1));
+            filewriter.close();
+            System.out.println("Successfully written output to "+file3);
+            return true;
+        }
+        catch(IOException e)
+        {
+            System.out.println("Error in opening file");
+            e.printStackTrace();
+            return false;
+        }
+
+    }
+    public boolean writeToFile(String file,int gaps){
+        try {
+            FileWriter filewriter = new FileWriter(file, true);
+            if(filewriter==null)
+                throw new IOException();
+            BufferedWriter bufferwriter=new BufferedWriter(filewriter);
+            if(bufferwriter==null)
+                throw new IOException();
+            bufferwriter.write(Integer.toString(gaps));
+            bufferwriter.newLine();
+            bufferwriter.close();
+            return true;
+        }
+        catch(IOException exception){
+            System.out.println("could not find or open the output file");
+            exception.printStackTrace();
+            return false;
+        }
+    }
 }
