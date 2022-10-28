@@ -28,6 +28,7 @@ public class urinalsTest {
         System.out.println("==========Vamsi Bhargav==Test 4 executed========");
         assertEquals(1,urinals.countUrinals("0001001"));
     }
+
 }
 
 

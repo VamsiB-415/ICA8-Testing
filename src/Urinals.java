@@ -57,8 +57,46 @@ public class Urinals {
     }
     int countUrinals(String str)
     {
-        System.out.println("Not Yet Implemented");
-        return 0;
+        if(goodString(str)==false)
+        {
+            return -1;
+        }
+        char[] input_str = str.toCharArray();
+        int count=0;
+        for(int i=0;i<str.length();i++)
+        {
+            if(input_str[i]=='0')
+            {
+                if(i>0 && i<str.length())
+                {
+                    if(input_str[i-1]=='0' && input_str[i+1]=='0')
+                    {
+                        count++;
+                        input_str[i]='1';
+                    }
+
+                }
+                else if(i==0)
+                {
+                    if(input_str[i+1]=='0')
+                    {
+                        count++;
+                        input_str[i]='1';
+                    }
+                }
+                else
+                {
+                    if(input_str[i-1]=='0')
+                    {
+                        count++;
+                        input_str[i]='1';
+                    }
+                }
+
+            }
+
+        }
+        return count;
     }
 
 
