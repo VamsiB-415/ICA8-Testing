@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df16db40-b8e5-4911-996e-6d6db673f2ca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Urinal.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ICA-8 Testing/Urinals.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ICA-8 Testing/Urinals.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ICA-8 Testing/urinalsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ICA-8 Testing/urinalsTest.class" afterDir="false" />
@@ -47,7 +48,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.urinalsTest">
+  <component name="RunManager" selected="JUnit.urinalsTest.testcountUrinals1">
     <configuration name="Urinals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Urinals" />
       <module name="ICA-8 Testing" />
@@ -64,6 +65,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="urinalsTest.testcountUrinals1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ICA-8 Testing" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="urinalsTest" />
+      <option name="METHOD_NAME" value="testcountUrinals1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="urinalsTest.testgoodString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ICA-8 Testing" />
       <option name="PACKAGE_NAME" value="" />
@@ -76,6 +87,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.urinalsTest.testcountUrinals1" />
         <item itemvalue="JUnit.urinalsTest" />
         <item itemvalue="Application.Urinals" />
         <item itemvalue="JUnit.urinalsTest.testgoodString" />
