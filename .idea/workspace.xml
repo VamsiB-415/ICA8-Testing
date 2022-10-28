@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df16db40-b8e5-4911-996e-6d6db673f2ca" name="Changes" comment="" />
+    <list default="true" id="df16db40-b8e5-4911-996e-6d6db673f2ca" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ICA-8 Testing/Urinals.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ICA-8 Testing/Urinals.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ICA-8 Testing/urinalsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ICA-8 Testing/urinalsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Urinals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Urinals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/urinalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/urinalsTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,21 +35,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "fileTemplates"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nseelam2/Documents/Assignments/515/Assignment 4/SER515-Fall2022/ICA8-Testing&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.urinalsTest.testgoodString">
+}</component>
+  <component name="RunManager" selected="JUnit.urinalsTest">
     <configuration name="Urinals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Urinals" />
       <module name="ICA-8 Testing" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="urinalsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ICA-8 Testing" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="urinalsTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -60,8 +76,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.urinalsTest.testgoodString" />
+        <item itemvalue="JUnit.urinalsTest" />
         <item itemvalue="Application.Urinals" />
+        <item itemvalue="JUnit.urinalsTest.testgoodString" />
       </list>
     </recent_temporary>
   </component>

@@ -7,12 +7,24 @@
 public class Urinals {
     public static void main(String[] args)
     {
-        // System.out.println(countUrinals("1001001"));
-        goodString("100010101");
+        Urinals urinals = new Urinals();
+        //System.out.println(urinals.countUrinals("1100001"));
+        //goodString("100010101");
     }
-    static Boolean goodString(String str)
+     Boolean goodString(String str)
     { // checks to see if valid string
-        System.out.println("Not yet Implemented");
+       for(int i=0;i<str.length();i++)
+       {
+           if(i+1<str.length())
+           {
+               if(str.charAt(i)=='1' && str.charAt(i+1)=='1')
+                   return  false;
+           }
+           if(str.charAt(i)!='0' && str.charAt(i)!='1')
+           {
+               return false;
+           }
+       }
         return true;
     }
 
